@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI answer generator installed</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="8d5226d5-540a-45ca-a6f3-defd0601ea2b"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 AI answer generator installed</h1>
 
+        <div class="step">
+            <p>1. Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension:</p>
+            <img src="images/step1.webp" alt="Pin the extension">
+        </div>
+
+        <div class="step">
+            <p>2. Open the extension (3) on any page to start using JPG to WebP converter:</p>
+            <img src="images/step2.webp" alt="Open the extension">
+        </div>
+    </div>
+
+    <canvas id="confetti"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti when the page loads
+        window.addEventListener('load', () => {
+            // Initial burst
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+
+            // Follow up with some random bursts
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0, y: 0.6 }
+                });
+            }, 200);
+
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1, y: 0.6 }
+                });
+            }, 400);
+        });
+    </script>
+</body>
+</html> 

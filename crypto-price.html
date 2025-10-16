@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker is now installed</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+    
+    <link rel="stylesheet" href="/viabit.store/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg black">
+    <div class="container">
+        <h1>🎉 Crypto Price Tracker is now installed</h1>
+
+        <div class="step">
+            <p>1. Pin the extension for quick access to the Crypto Price Tracker:</p>
+            <img src="/viabit.store/assets/images/instruction1.jpg" alt="Pin the extension">
+        </div>
+
+        <div class="step">
+            <p>2. Click on extension icon to open Crypto Price Tracker window and paste text you need reply to:</p>
+            <img src="/viabit.store/assets/images/instruction2.jpg" alt="Open the extension">
+        </div>
+    </div>
+
+    <canvas id="confetti"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti when the page loads
+        window.addEventListener('load', () => {
+            // Initial burst
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+
+            // Follow up with some random bursts
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0, y: 0.6 }
+                });
+            }, 200);
+
+            setTimeout(() => {
+                confetti({
+                    particleCount: 50,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1, y: 0.6 }
+                });
+            }, 400);
+        });
+    </script>
+</body>
+</html> 
